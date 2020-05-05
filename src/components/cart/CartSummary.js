@@ -24,7 +24,7 @@ class CartSummary extends Component {
   renderEmpty() {
     return (
       <NavItem>
-        <NavLink>Sepetiniz Bos</NavLink>
+        <NavLink>Your cart is empty</NavLink>
       </NavItem>
     );
   }
@@ -52,7 +52,7 @@ class CartSummary extends Component {
           <DropdownItem divider />
           <DropdownItem>
             {" "}
-            <Link to={"/cart"}>Go To CArt </Link>{" "}
+            <Link to={"/cart"}>GoToCart </Link>{" "}
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
