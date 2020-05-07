@@ -24,7 +24,7 @@ class CartSummary extends Component {
   renderEmpty() {
     return (
       <NavItem>
-        <NavLink>Your cart is empty</NavLink>
+        <NavLink>Cart is empty</NavLink>
       </NavItem>
     );
   }
