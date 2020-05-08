@@ -36,6 +36,20 @@ export function saveProduct(product) {
   };
 }
 
+export async function handleResponse(response){
+  if(response.ok){
+    return response.json()
+  }
+  const error = await response.text()
+  throw new Error(error)
+}
+
+export function handleError(error){
+  console.error("an error occurd")
+  throw error;
+}
+
+
 export function getProducts(categoryId) {
   return function(dispatch) {
     let url = "http://localhost:3000/products";
